@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title></title>
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+    <style>
+      
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+      body {
+        font-size: .875rem;
+      }
+
+      .feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+      }
+
+      /*
+       * Sidebar
+       */
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        /* rtl:raw:
+        right: 0;
+        */
+        bottom: 0;
+        /* rtl:remove */
+        left: 0;
+        z-index: 100; /* Behind the navbar */
+        padding: 48px 0 0; /* Height of navbar */
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+      }
+
+      @media (max-width: 767.98px) {
+        .sidebar {
+          top: 5rem;
+        }
+      }
+
+      .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      }
+
+      .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+      }
+
+      .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #727272;
+      }
+
+      .sidebar .nav-link.active {
+        color: #007bff;
+      }
+
+      .sidebar .nav-link:hover .feather,
+      .sidebar .nav-link.active .feather {
+        color: inherit;
+      }
+
+      .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+
+      /*
+       * Navbar
+       */
+
+      .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+      }
+
+      .navbar .navbar-toggler {
+        top: .25rem;
+        right: 1rem;
+      }
+
+      .navbar .form-control {
+        padding: .75rem 1rem;
+        border-width: 0;
+        border-radius: 0;
+      }
+
+      .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+      }
+
+      .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+      }
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 bg-light text-dark" href="#">LOGO</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <h3 class="text-white bg-dark">Mi Tienda</h3>
+  
+    <div class="row px-2">
+    <a class="nav-link col text-white" href="#">Ayuda  </a>
+    <a class="nav-link col text-white" href="#">Salir</a>
+    </div>
+</header>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="configuracion.html">
+              <span data-feather="home"><i class="fas fa-cogs"></i></span>
+              Configuración
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"><i class="fas fa-gifts"></i></span>
+              Productos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"><i class="fas fa-box-open"></i></span>
+              Contenido
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"><i class="fas fa-clipboard-list"></i></span>
+              Administración
+            </a>
+          </li>
+        </ul>
+
+        
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      
+    </main>
+  </div>
+</div>
+
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">CONFIGURACIÓN</h1>
+      </div>
+       
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Texto En Tienda
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Introducirá el texto persoanalizado que su tienda debe de contener.
+          </p>        
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Diseño y Tema De Color
+          </a>
+        </div>
+        <div class="col">
+          <p>Le ayuda a elegir entre varios diseños ya existentes para la mejor vista de su tienda. Especificará las
+          características que más le agraden para la creación de sus páginas.
+          </p>
+          
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Categorías
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Es necesario que clasifique sus productos en diferentes categorías para que se pueda crear una navegación sencilla y eficiente.
+          </p>
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Temas De Contenido
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            La intención general de su tienda es mostrar y vender sus productos, sin embargo también puede presentar contenido temático en su tienda.            
+          </p>
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Moneda & Impuestos
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Elija la moneda que usará para sus productos y el tipo de cambio si desea presentar el monto total en otra mondea alternativa. (predeterminada "pesos" También podrá indicar si los precios de sus productos ya incluyen el IVA). Predeterminado ya incluyen IVA.
+          </p>
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Modos De Envio
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Señale el tipo de envío que desea ofrecer a sus clientes al concretar sus pedidos.
+            Su tienda cuenta con métodos de envío propios que usted podrá configurar en caso de enviar por su propia cuenta los productos, también puede configurar los envíos con una mensajería comercial.
+          </p>
+        </div>
+      </div>
+      <div class="row my-2 align-items-center">
+        <div class="col-3">
+          <a href="texto_en_tienda.html" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">
+            Formas De Pago
+          </a>
+        </div>
+        <div class="col">
+          <p>
+            Señale que tipo de formas de pago acepta en su negocio, para que estas aparezcan ante el cliente al hacer sus pedidos.
+            Con esta sala de videoconferencia puede atender en vivo a sus clientes.
+          </p>
+        </div>
+      </div>
+
+    </main>
+
+
+    <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+      <!-- choose one -->
+
+  </body>
+</html>
